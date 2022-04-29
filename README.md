@@ -1,10 +1,10 @@
-#picture_slider
+# picture_slider
 
 ## by nickslick03
 
 picture_slider formats a picture frame element > picture container element > image elements into a dynamic picture slider.
 
-#Usage
+# Usage
 
 **JS**:
 
