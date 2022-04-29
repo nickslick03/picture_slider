@@ -1,6 +1,6 @@
 {
   "name": "picture_slider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "picture_slider formats a picture frame element > picture container element > image elements into a dynamic picture slider.",
   "main": "index.js",
   "scripts": {
