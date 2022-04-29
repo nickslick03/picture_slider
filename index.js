@@ -120,30 +120,31 @@ function formatPictureSlider(pictureFrame, pictureContainer, height, heightUnit,
         });
     }
 
-    //Chevron SVGs
+    //left and right triangles
     for(let i = 0; i < 2; i++) {
-        let chevron = document.createElement('img');
-        chevron.style.position = 'absolute';
-        chevron.style.width = '5vw';
-        chevron.style.height = '5vw';
-        chevron.style.maxWidth = '48px';
-        chevron.style.maxHeight = '48px';
-        chevron.style.bottom = '50%';
-        chevron.style.transform = 'translateY(50%)';
+        let triangle = document.createElement('div');
+        triangle.style = `
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 50%;
+        transform: translateY(100%);
+        border: rgba(0,0,0,0) solid 1vw;`;
         if(i === 0) {
-            chevron.setAttribute('src', './SVGs/chevron-left.png');
-            chevron.addEventListener('click', () => {
+            triangle.style.borderRight = 'white solid 2vw';
+            triangle.addEventListener('click', () => {
                 switchSlide(pictureSlider.currentSlide - 1, pictureSlider);
             });
         } else {
-            chevron.setAttribute('src', './SVGs/chevron-right.png');
-            chevron.style.right = '0';
-            chevron.addEventListener('click', () => {
+            triangle.style.right = '0';
+            triangle.style.borderLeft = 'white solid 2vw';
+            triangle.addEventListener('click', () => {
                 switchSlide(pictureSlider.currentSlide + 1, pictureSlider);
             });
         }
-        pictureSlider.pictureFrame.appendChild(chevron);
+        pictureSlider.pictureFrame.appendChild(triangle);
     }
+    
     return {
         switchSlide(index) {
             switchSlide(pictureSlider, index);
