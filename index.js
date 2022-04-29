@@ -63,7 +63,7 @@ const switchSlide = (nextSlide, pictureSlider) => {
     pictureSlider.currentSlide = nextSlide;
 }
 
-const formatPictureSlider  = (pictureFrame, pictureContainer, height, heightUnit, autoSlideSeconds, maxHeight) => {
+function formatPictureSlider(pictureFrame, pictureContainer, height, heightUnit, autoSlideSeconds, maxHeight) {
     const pictureSlider = {
         pictureFrame,
         pictureContainer,

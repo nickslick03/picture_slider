@@ -1,0 +1,23 @@
+{
+  "name": "picture_slider",
+  "version": "1.0.0",
+  "description": "picture_slider formats a picture frame element > picture container element > image elements into a dynamic picture slider.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickslick03/picture_slider.git"
+  },
+  "keywords": [
+    "front-end",
+    "images"
+  ],
+  "author": "nickslick03",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickslick03/picture_slider/issues"
+  },
+  "homepage": "https://github.com/nickslick03/picture_slider#readme"
+}
