@@ -144,12 +144,8 @@ function formatPictureSlider(pictureFrame, pictureContainer, height, heightUnit,
         }
         pictureSlider.pictureFrame.appendChild(triangle);
     }
-    
-    return {
-        switchSlide(index) {
-            switchSlide(pictureSlider, index);
-        }
-    }
+
+    return index => switchSlide(pictureSlider, index);
 };
 
 module.exports = formatPictureSlider;
