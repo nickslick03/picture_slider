@@ -46,7 +46,7 @@ document.body.onload = () => { formatPictureSlider(document.getElementById('pict
 
 **OUTPUT**:
 
-![picture slider result gif](https://media.giphy.com/media/u0FjeyL9R3N5vEbC5i/giphy.gif);
+![picture slider result gif](https://media.giphy.com/media/u0FjeyL9R3N5vEbC5i/giphy.gif)
 
 **IMPORTANT**:
 
